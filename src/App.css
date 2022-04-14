@@ -49,6 +49,8 @@ p, span{
 	align-items: center;
 }
 
+
+
 @media (min-width: 1390px) { 
 
 	.main-achat{
@@ -88,7 +90,6 @@ p, span{
 .light{color:var(--light);}
 .dark{color:var(--dark);}
 .white-bg{background-color:var(--white);color:var(--dark);}
-.black-bg{color:var(--white);color:var(--black);}
 .blue-bg{background-color:var(--blue);color:var(--white);}
 .green-bg{background-color:var(--green);color:var(--white);}
 .yellow-bg{background-color:var(--yellow);color:var(--white);}

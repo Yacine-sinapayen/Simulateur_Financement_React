@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+
 import Home from './Components/Home/Home';
 import Praticien from './Components/Status/Praticien/Praticien';
 import Salarie from './Components/Status/Salarie/Salarie';
@@ -10,9 +11,10 @@ import FifDpcAchat from './Components/Financements/FifDpcAchat/FifDpcAchat';
 import OpcoDpc from './Components/Financements/OpcoDpc/OpcoDpc';
 import Opco from './/Components/Financements/Opco/Opco';
 
+
 function App() {
   return (
-    <div className="App">
+    <div className="App white-bg">
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -24,7 +26,6 @@ function App() {
         <Route path="fifdpcachat" element={<FifDpcAchat />} />
         <Route path="opcodpc" element={<OpcoDpc />} />
         <Route path="opco" element={<Opco />} />
-
       </Routes>
     </div>
   );

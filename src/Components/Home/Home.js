@@ -17,9 +17,11 @@ export default function Home() {
     }
     return (
         <>
-            <div className='flex row blue-bg'>
+            <div className='flex row'>
                 <LeftPart />
-                <div className='main-content flex column center-content green-bg'>
+                <div className='main-content flex column center-content'>
+
+                <h1>Bienvenue sur votre simulateur de financement ! </h1>
                     <h1>Vous êtes ?</h1>
 
                     <div className='flex'>

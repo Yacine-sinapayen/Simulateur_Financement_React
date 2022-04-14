@@ -1,0 +1,9 @@
+.left-part{
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+
+.logo-orga {
+    border-radius: 8px;
+    width: 100px;
+}
