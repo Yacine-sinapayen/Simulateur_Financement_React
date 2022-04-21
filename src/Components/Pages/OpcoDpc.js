@@ -1,7 +1,7 @@
 import React from 'react'
-import Dpc from '../../Cards/Dpc';
-import OpcoCard from '../../Cards/OpcoCard';
-import LeftPart from '../../LeftPart/LeftPart'
+import Dpc from '../Dpc';
+import OpcoCard from '../OpcoCard';
+import LeftPart from '../LeftPart/LeftPart'
 
 export default function OpcoDpc() {
   return (

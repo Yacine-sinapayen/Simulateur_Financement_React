@@ -1,8 +1,8 @@
 import React from 'react'
-import arrow from '../../assets/arrow.svg'
+import arrow from '../assets/arrow.svg'
 
 export default function Opco() {
-    
+
     const learnyLib = () => {
         window.open('https://www.learnylib.com/', '_blank');
     }
@@ -26,7 +26,7 @@ export default function Opco() {
                         <p>Jusqu’à 6 mois pour envoyer la demande de remboursement après achat de la formation..</p>
                     </div>
                 </div>
-                
+
                 <div className='center-content'>
                     <button className="btn center-content" onClick={learnyLib}>Choisir ma formation</button>
                 </div>

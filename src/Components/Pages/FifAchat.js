@@ -1,7 +1,7 @@
 import React from 'react'
-import Fifpl from '../../Cards/Fifpl'
-import Achat from '../../Cards/Achat'
-import LeftPart from '../../LeftPart/LeftPart'
+import Fifpl from '../Fifpl'
+import Achat from '../Achat'
+import LeftPart from '../LeftPart/LeftPart'
 
 
 export default function FifAchat() {

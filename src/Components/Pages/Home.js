@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import LeftPart from '../../LeftPart/LeftPart';
+import LeftPart from '../LeftPart/LeftPart';
+import { motion } from 'framer-motion';
 
 export default function Home() {
 
@@ -16,8 +17,14 @@ export default function Home() {
         navigate('/etudiant');
     }
     return (
-        <>
-            <div className='flex row'>
+
+            <motion.div 
+            className='flex row'
+            
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+
+            >
                 <LeftPart />
 
                 <div className='w100p flex column center-content'>
@@ -30,8 +37,8 @@ export default function Home() {
                         <button className='mrg-10 btn center-content' onClick={goEtudiant}>Étudiant.e</button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-        </>
+        
     )
 }

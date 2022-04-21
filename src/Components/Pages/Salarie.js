@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftPart from '../../../LeftPart/LeftPart';
+import LeftPart from '../LeftPart/LeftPart';
 import { useNavigate } from 'react-router-dom'
 
 export default function Salarie() {
