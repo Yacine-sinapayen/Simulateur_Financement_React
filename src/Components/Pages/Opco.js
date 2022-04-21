@@ -1,6 +1,6 @@
 import React from 'react';
-import OpcoCard from '../../Cards/OpcoCard';
-import LeftPart from '../../LeftPart/LeftPart'
+import OpcoCard from '../OpcoCard';
+import LeftPart from '../LeftPart/LeftPart'
 
 export default function Opco() {
   return (

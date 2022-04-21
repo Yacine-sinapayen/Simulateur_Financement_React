@@ -1,13 +1,17 @@
 import React from 'react'
-import Fifpl from '../../Cards/Fifpl'
-import Dpc from '../../Cards/Dpc'
-import Achat from '../../Cards/Achat'
+import Fifpl from '../Fifpl'
+import Dpc from '../Dpc'
+import Achat from '../Achat'
+import { motion } from 'framer-motion'
 
-import LeftPart from '../../LeftPart/LeftPart'
+import LeftPart from '../LeftPart/LeftPart'
 
 export default function FifDpcAchat() {
   return (
-    <div className='flex row'>
+    <motion.div className='flex row'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <LeftPart />
       <div className='flex column center w100p'>
         <h1 className='text-center'>Mes possibilités de financements</h1>
@@ -17,6 +21,6 @@ export default function FifDpcAchat() {
           <Achat />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

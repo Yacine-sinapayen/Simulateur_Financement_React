@@ -1,6 +1,7 @@
 import React from 'react'
-import LeftPart from '../../../LeftPart/LeftPart';
+import LeftPart from '../LeftPart/LeftPart';
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion';
 
 export default function Praticen() {
 
@@ -16,7 +17,14 @@ export default function Praticen() {
 
   return (
 
-    <div className='flex row'>
+    <motion.div
+      className='flex row'
+
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    
+      >
+
       <LeftPart />
       <div className='w100p flex column center-content'>
 
@@ -29,6 +37,6 @@ export default function Praticen() {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }

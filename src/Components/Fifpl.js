@@ -1,19 +1,19 @@
 import React from 'react'
-import './Fifpl.css'
-import arrow from '../../assets/arrow.svg'
-import flag from '../../assets/flag.svg'
+import arrow from '../assets/arrow.svg'
+import flag from '../assets/flag.svg'
 
 export default function Fifpl() {
 
-    // const learnyLib = () => {
-    //     window.open('https://www.learnylib.com/', '_blank');
-    // }
+    const learnyLib = () => {
+        window.open('https://www.learnylib.com/', '_blank');
+    }
+    const fifPath = '/fifdpcachat' === window.location.pathname;
 
     return (
         <>
             <div className="block-cards">
 
-                <h2 className=" text-center bold">FIF-PL</h2>
+                <h2 className="text-center bold">FIF-PL</h2>
 
                 <div className='center-content'>
                     <div className="price flex row">
@@ -22,7 +22,7 @@ export default function Fifpl() {
                     </div>
                 </div>
 
-                <div className="main flex column">
+                <div className={fifPath ? 'mrg-b65' : "main flex column h150 center-content"}>
                     <div className="flex row top">
                         <img className="pdg-t10 w20 mrg-r5 " src={arrow} alt="" />
                         <p>Remboursement a postériori après dépôt de votre demande de prise en charge sur votre compte FIFPL</p>
@@ -30,7 +30,9 @@ export default function Fifpl() {
                 </div>
 
 
-                    <button className="btn flex self-center">Choisir ma formation</button>
+                <div className='center-content'>
+                    <button className="btn center-content" onClick={learnyLib}>Choisir ma formation</button>
+                </div>
             </div>
         </>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftPart from '../../../LeftPart/LeftPart';
+import LeftPart from '../LeftPart/LeftPart';
 
 export default function Etudiant() {
   return (
