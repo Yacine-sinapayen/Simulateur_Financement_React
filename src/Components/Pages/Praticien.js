@@ -17,16 +17,14 @@ export default function Praticen() {
 
   return (
 
-    <motion.div
-      className='flex row'
-
+<div className='flex row'>
+      <LeftPart />
+    <motion.div 
+    className='w100p flex column center-content'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-    
+      
       >
-
-      <LeftPart />
-      <div className='w100p flex column center-content'>
 
         <h1>Où pratiquez-vous ?</h1>
 
@@ -35,8 +33,7 @@ export default function Praticen() {
           <button className='mrg-10 btn center-content' onClick={goFifDpcAchat}>En france métropolitaine ?</button>
           <button className='mrg-10 btn center-content' onClick={goFifAchat}>Territoire Outre-Mer (TOM)</button>
         </div>
-
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }

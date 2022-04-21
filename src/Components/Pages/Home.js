@@ -17,28 +17,25 @@ export default function Home() {
         navigate('/etudiant');
     }
     return (
-
-            <motion.div 
-            className='flex row'
-            
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-
+        <div className='flex row'>
+            <LeftPart />
+            <motion.div
+                className='w100p flex column center-content'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
             >
-                <LeftPart />
-
-                <div className='w100p flex column center-content'>
                 <h1>Bienvenue sur votre simulateur de financement ! </h1>
-                    <h1>Vous êtes ?</h1>
+                <h1>Vous êtes ?</h1>
 
-                    <div className='flex'>
-                        <button className='mrg-10 btn center-content' onClick={goPraticien}>Paticien.ne libéral</button>
-                        <button className='mrg-10 btn center-content' onClick={goSalarie}>Salarié.e </button>
-                        <button className='mrg-10 btn center-content' onClick={goEtudiant}>Étudiant.e</button>
-                    </div>
+                <div className='flex'>
+                    <button className='mrg-10 btn center-content' onClick={goPraticien}>Paticien.ne libéral</button>
+                    <button className='mrg-10 btn center-content' onClick={goSalarie}>Salarié.e </button>
+                    <button className='mrg-10 btn center-content' onClick={goEtudiant}>Étudiant.e</button>
                 </div>
-            </motion.div>
 
-        
+            </motion.div>
+        </div>
+
+
     )
 }
