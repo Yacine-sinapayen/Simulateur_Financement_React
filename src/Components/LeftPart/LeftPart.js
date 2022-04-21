@@ -13,7 +13,7 @@ import Logo2 from '../../assets/Logo2.svg';
 
 export default function LeftPart() {
     return (
-        <div className='left-part flex column w75p dark-bg'>
+        <div className='left-part flex column dark-bg'>
             <div className="flex row middle">
             <img className='w30' src={backHome} alt="" />
                 <a className="white" href="https://www.learnylib.com/" target="_blank" rel="noopener noreferrer">Retour au site</a>

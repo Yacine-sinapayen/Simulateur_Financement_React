@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import LeftPart from '../LeftPart/LeftPart';
+import LeftPart from '../../LeftPart/LeftPart';
 
 export default function Home() {
 
@@ -19,8 +19,8 @@ export default function Home() {
         <>
             <div className='flex row'>
                 <LeftPart />
-                <div className='main-content flex column center-content'>
 
+                <div className='w100p flex column center-content'>
                 <h1>Bienvenue sur votre simulateur de financement ! </h1>
                     <h1>Vous êtes ?</h1>
 
@@ -29,9 +29,7 @@ export default function Home() {
                         <button className='mrg-10 btn center-content' onClick={goSalarie}>Salarié.e </button>
                         <button className='mrg-10 btn center-content' onClick={goEtudiant}>Étudiant.e</button>
                     </div>
-
                 </div>
-
             </div>
 
         </>

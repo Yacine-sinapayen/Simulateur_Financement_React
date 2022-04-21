@@ -1,20 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
-import Home from './Components/Home/Home';
-import Praticien from './Components/Status/Praticien/Praticien';
-import Salarie from './Components/Status/Salarie/Salarie';
-import Etudiant from './Components/Status/Etudiant/Etudiant';
+import Home from './Components/Pages/Home/Home';
+import Praticien from './Components/Pages/Status/Praticien/Praticien';
+import Salarie from './Components/Pages/Status/Salarie/Salarie';
+import Etudiant from './Components/Pages/Status/Etudiant/Etudiant';
 
-import FifAchat from './Components/Financements/FifAchat/FifAchat';
-import FifDpcAchat from './Components/Financements/FifDpcAchat/FifDpcAchat';
-import OpcoDpc from './Components/Financements/OpcoDpc/OpcoDpc';
-import Opco from './/Components/Financements/Opco/Opco';
+import FifAchat from './Components/Pages/FifAchat/FifAchat';
+import FifDpcAchat from './Components/Pages/FifDpcAchat/FifDpcAchat';
+import OpcoDpc from './Components/Pages/OpcoDpc/OpcoDpc';
+import Opco from './/Components/Pages/Opco/Opco';
 
 
 function App() {
   return (
-    <div className="App white-bg">
+    <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
 
