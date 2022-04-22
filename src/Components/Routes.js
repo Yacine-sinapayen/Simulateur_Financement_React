@@ -17,7 +17,7 @@ export default function AnimateRoutes() {
     const location = useLocation();
     return (
         <AnimatePresence>
-            <Routes location={location} key={location.pathname}>
+            <Routes basename={process.env.PUBLIC_URL} location={location} key={location.pathname}>
                 <Route exact path="/" element={<Home />} />
 
                 <Route path="/praticien" element={<Praticien />} />
