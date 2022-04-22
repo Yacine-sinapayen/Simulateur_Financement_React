@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.scss';
-import AnimateRoutes from './Components/AnimateRoutes';
+import Routes from './Components/Routes';
 
 function App() {
   return (
     <div className="App">
-         <AnimateRoutes />
+         <Routes />
     </div>
   );
 }
