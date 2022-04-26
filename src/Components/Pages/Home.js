@@ -28,7 +28,7 @@ export default function Home() {
                 <h1>Vous êtes ?</h1>
 
                 <div className='flex'>
-                    <button className='mrg-10 btn center-content' onClick={goPraticien}>Paticien.ne libéral</button>
+                    <button className='mrg-10 btn center-content' onClick={goPraticien}>paticien.ne libéral</button>
                     <button className='mrg-10 btn center-content' onClick={goSalarie}>Salarié.e </button>
                     <button className='mrg-10 btn center-content' onClick={goEtudiant}>Étudiant.e</button>
                 </div>

@@ -9,9 +9,9 @@ export default function OpcoDpc() {
       <LeftPart />
       <div className='flex wrap column center-content w100p'>
         <h1 className='text-center'>Mes possibilités de financements</h1>
-        <div className='flex row center'>
-          <Dpc />
+        <div className='flex wrap center'>
           <OpcoCard />
+          <Dpc />
         </div>
       </div>
     </div>

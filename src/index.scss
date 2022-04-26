@@ -44,6 +44,7 @@ body {
 	color: var(--dark);
 }
 
+
 .block-cards {
 	padding: 10px;
 	border-radius: 8px;
@@ -51,8 +52,11 @@ body {
 	background-color: var(--white);
 	border: solid 1.5px #292A36;
 	margin: 10px;
+	width: 355px;
+	max-width: 355px;
+	min-width: 355px;
+	overflow-x: hidden;
 }
-
 
 button {
 	font-size: 15px;
@@ -66,8 +70,9 @@ button {
 	transition: all .3s;
 	z-index: 1;
 	overflow: hidden;
-	display: inline-block;
+	// display: inline-block;
 	position: relative;
+	margin-top: auto;
 	&after {
 		content: '';
 		position: absolute;
@@ -99,12 +104,6 @@ button {
 			width: 100%;
 		}
 	}
-}
-
-
-p,
-span {
-	width: 350px;
 }
 
 
@@ -541,6 +540,11 @@ span {
 	height: 100%;
 }
 
+.h100vh{
+	height: 100vh;
+	overflow-x: hidden;
+}
+
 /* MARGINS et PADDINGS */
 .mrg-auto {
 	margin: auto
@@ -654,8 +658,8 @@ span {
 	margin-bottom: 30px;
 }
 
-.mrg-b80 {
-	margin-bottom: 80px;
+.mrg-b82 {
+	margin-bottom: 82px;
 }
 
 .pdg-5 {

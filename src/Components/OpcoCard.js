@@ -9,7 +9,7 @@ export default function Opco() {
 
     return (
         <>
-            <div className="block-cards">
+            <div className="block-cards flex column center-content">
                 <h2 className="text-center bold">OPCO</h2>
 
                 <div className="main mrg-b10 flex column">
@@ -27,9 +27,7 @@ export default function Opco() {
                     </div>
                 </div>
 
-                <div className='center-content'>
-                    <button className="btn center-content" onClick={learnyLib}>Choisir ma formation</button>
-                </div>
+                <button className="center-content" onClick={learnyLib}>Choisir ma formation</button>
             </div>
         </>
     )

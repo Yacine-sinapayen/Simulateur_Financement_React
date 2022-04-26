@@ -20,7 +20,7 @@ export default function AnimateRoutes() {
             <Routes  location={location} key={location.pathname}>
                 <Route exact path="/" element={<Home />} />
 
-                <Route path="/praticien" element={<Praticien />} />
+                <Route  path="/praticien" exact element={<Praticien />} />
                 <Route path="/salarie" element={<Salarie />} />
                 <Route path="/etudiant" element={<Etudiant />} />
 

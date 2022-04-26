@@ -11,7 +11,7 @@ export default function Fifpl() {
 
     return (
         <>
-            <div className="block-cards">
+            <div className="block-cards flex column center-content">
 
                 <h2 className="text-center bold">FIF-PL</h2>
 
@@ -30,9 +30,8 @@ export default function Fifpl() {
                 </div>
 
 
-                <div className='center-content'>
-                    <button className="btn center-content" onClick={learnyLib}>Choisir ma formation</button>
-                </div>
+                    <button className="center-content" onClick={learnyLib}>Choisir ma formation</button>
+                
             </div>
         </>
     )

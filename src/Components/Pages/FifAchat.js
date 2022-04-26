@@ -6,11 +6,11 @@ import LeftPart from '../LeftPart/LeftPart'
 
 export default function FifAchat() {
   return (
-    <div className='flex row'>
+    <div className='flex'>
       <LeftPart />
-      <div className='flex wrap column center-content w100p'>
-        <h1 className=''>Mes possibilités de financements</h1>
-        <div className='flex row center'>
+      <div className='flex column center-content w100vh'>
+        <h1 className='text-center'>Mes possibilités de financements</h1>
+        <div className='flex wrap center'>
           <Fifpl />
           <Achat />
         </div>
