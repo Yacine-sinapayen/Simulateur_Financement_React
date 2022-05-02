@@ -14,20 +14,24 @@ export default function FifDpcAchat() {
   const browserWidth = useDimension();
 
   return (
-    <div  className={ browserWidth < 700 ? 'flex column' : 'flex row'}>
+    <div className={browserWidth < 700 ? 'flex column' : 'flex row'}>
       <LeftPart />
 
       <motion.div
-        className='right-part-responsive w100p h100vh center-content flex column'
+        className='right-part-responsive w100p h100vh flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-  
-        <h1 className='text-center'>Mes possibilités de financements</h1>
-        <div className='flex wrap center'>
-          <Dpc />
-          <Achat />
-          <Fifpl />
+        <div className='center-content flex column'>
+
+          <h1 className='text-center mrg-10'>Mes possibilités de financements</h1>
+
+          <div className='flex wrap center-content'>
+            <Dpc />
+            <Achat />
+            <Fifpl />
+          </div>
+
         </div>
       </motion.div>
     </div>

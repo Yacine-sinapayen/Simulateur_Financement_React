@@ -14,13 +14,16 @@ export default function FifAchat() {
   return (
     <div className={ browserWidth < 700 ? 'flex column' : 'flex row' }>
       <LeftPart />
+
       <motion.div
-        className=' right-part-responsive h100vh  center-content flex column'
+        className=' right-part-responsive h100vh center-content flex column'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <h1 className='text-center'>Mes possibilités de financements</h1>
-        <div className='flex wrap center'>
+
+        <h1 className='text-center mrg-10'>Mes possibilités de financements</h1>
+
+        <div className='flex wrap center-content'>
           <Fifpl />
           <Achat />
         </div>
