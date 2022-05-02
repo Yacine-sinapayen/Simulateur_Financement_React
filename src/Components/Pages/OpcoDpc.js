@@ -15,7 +15,7 @@ export default function OpcoDpc() {
 
       {/* La balise "motion.div" est considérée comme une div */}
       <motion.div
-        className='w100p h100vh center-content flex column'
+        className='right-part-responsive w100p h100vh flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
         <h1 className='text-center'>Mes possibilités de financements</h1>

@@ -45,6 +45,7 @@ p {
 	padding-bottom: 8px;
 	padding-left: 0px;
 	padding-right: 0px;
+	line-height: 1.2em;
 }
 
 h1 {
@@ -155,6 +156,13 @@ button {
 
 	.right-part-responsive{
 		height: auto !important;
+	}
+
+	.block-cards-responsive{
+		width: 305px;
+		max-width: 305px;
+		min-width: 305px;
+		overflow-x: hidden;
 	}
 }
 

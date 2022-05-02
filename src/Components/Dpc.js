@@ -10,7 +10,7 @@ export default function Dpc() {
 
     return (
         <>
-            <div className="block-cards flex column center-content">
+            <div className="block-cards block-cards-responsive flex column center-content">
 
                 <h2 className="text-center bold">DPC</h2>
 
