@@ -16,13 +16,12 @@ export default function Dpc() {
 
                 <div className='center-content'>
                     <div className="price flex row">
-                        <img className="w20" src={timer} alt="" />
+                        <img className="w30" src={timer} alt="" />
                         <p>14h/an de crédit DPC</p>
                     </div>
                 </div>
 
                 <div
-                    // className={ usePathname ? "mrg-b82" : "main mrg-b10 flex column"}
                     className="main mrg-b10 flex column"
                 >
                     <div className="flex row top">

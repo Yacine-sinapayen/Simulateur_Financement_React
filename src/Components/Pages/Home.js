@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import LeftPart from '../LeftPart/LeftPart';
 import { motion } from 'framer-motion';
 
+import useDimension from '../hook/useDimension';
+
 export default function Home() {
 
     const navigate = useNavigate();
@@ -16,21 +18,29 @@ export default function Home() {
     const goEtudiant = () => {
         navigate('/etudiant');
     }
+
+    const browserWidth = useDimension();
+    
     return (
-        <div className='flex row'>
+        <div className={ browserWidth < 700 ? 'flex column' : 'flex row'}>
             <LeftPart />
+
             <motion.div
-                className='w100p flex column center-content'
+                className='right-part-responsive w100p h100vh flex column center-content'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
             >
-                <h1>Bienvenue sur votre simulateur de financement ! </h1>
-                <h1>Vous êtes ?</h1>
+                <div className='center-content flex column'>
 
-                <div className='flex'>
-                    <button className='mrg-10 btn center-content' onClick={goPraticien}>paticien.ne libéral</button>
-                    <button className='mrg-10 btn center-content' onClick={goSalarie}>Salarié.e </button>
-                    <button className='mrg-10 btn center-content' onClick={goEtudiant}>Étudiant.e</button>
+                    <h1 className='text-center mrg-10'>Bienvenue sur votre simulateur de financement ! </h1>
+
+                    <h1 className='text-center mrg-10'>Vous êtes ?</h1>
+
+                    <div className='flex wrap center-content'>
+                        <button className=' btn center-content mrg-10' onClick={goPraticien}>Praticien.ne libéral</button>
+                        <button className=' btn center-content mrg-10' onClick={goSalarie}>Salarié.e </button>
+                        <button className='btn center-content mrg-10 ' onClick={goEtudiant}>Étudiant.e</button>
+                    </div>
                 </div>
 
             </motion.div>

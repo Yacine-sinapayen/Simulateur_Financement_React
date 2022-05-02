@@ -25,7 +25,7 @@ export default function AnimateRoutes() {
                 <Route path="/etudiant" element={<Etudiant />} />
 
                 <Route path="fifachat" element={<FifAchat />} />
-                <Route path="fifdpcachat" element={<FifDpcAchat />} />
+                <Route path="FifDpcAchat" element={<FifDpcAchat />} />
                 <Route path="opcodpc" element={<OpcoDpc />} />
                 <Route path="opco" element={<Opco />} />
             </Routes>

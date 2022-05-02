@@ -2,18 +2,28 @@ import React from 'react'
 import Dpc from '../Dpc';
 import OpcoCard from '../OpcoCard';
 import LeftPart from '../LeftPart/LeftPart'
+import { motion } from 'framer-motion';
+import useDimension from '../hook/useDimension';
+
 
 export default function OpcoDpc() {
+  const browserWidth = useDimension();
+
   return (
-    <div className='flex row'>
+    <div className={ browserWidth < 700 ? 'flex column' : 'flex row'}>
       <LeftPart />
-      <div className='flex wrap column center-content w100p'>
+
+      {/* La balise "motion.div" est considérée comme une div */}
+      <motion.div
+        className='w100p h100vh center-content flex column'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}>
         <h1 className='text-center'>Mes possibilités de financements</h1>
         <div className='flex wrap center'>
           <OpcoCard />
           <Dpc />
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

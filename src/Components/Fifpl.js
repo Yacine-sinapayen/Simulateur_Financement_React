@@ -7,7 +7,6 @@ export default function Fifpl() {
     const learnyLib = () => {
         window.open('https://www.learnylib.com/', '_blank');
     }
-    const fifPath = '/fifdpcachat' === window.location.pathname;
 
     return (
         <>
@@ -17,12 +16,12 @@ export default function Fifpl() {
 
                 <div className='center-content'>
                     <div className="price flex row">
-                        <img className="w20" src={flag} alt="" />
+                        <img className="w30" src={flag} alt="" />
                         <p>Jusqu’à 750€/an de prise en charge</p>
                     </div>
                 </div>
 
-                <div className={fifPath ? 'mrg-b65' : "main flex column h150 center-content"}>
+                <div className="main flex column h150 center-content">
                     <div className="flex row top">
                         <img className="pdg-t10 w20 mrg-r5 " src={arrow} alt="" />
                         <p>Remboursement a postériori après dépôt de votre demande de prise en charge sur votre compte FIFPL</p>
