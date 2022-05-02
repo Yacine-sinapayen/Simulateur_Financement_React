@@ -9,7 +9,7 @@ export default function Opco() {
 
     return (
         <>
-            <div className="block-cards flex column center-content">
+            <div className="block-cards block-cards-responsive flex column center-content">
                 <h2 className="text-center bold">OPCO</h2>
 
                 <div className="main mrg-b10 flex column">
