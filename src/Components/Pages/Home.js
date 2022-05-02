@@ -23,6 +23,7 @@ export default function Home() {
     
     return (
         <div className={ browserWidth < 700 ? 'flex column' : 'flex row'}>
+
             <LeftPart />
 
             <motion.div
@@ -30,6 +31,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
             >
+            
                 <div className='center-content flex column'>
 
                     <h1 className='text-center mrg-10'>Bienvenue sur votre simulateur de financement ! </h1>
