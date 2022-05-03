@@ -175,6 +175,15 @@ button {
 	}
 }
 
+@media screen and (max-width:320px) {
+
+	.block-cards-responsive{
+		width: 250px;
+		max-width: 250px;
+		min-width: 250px;
+		overflow-x: hidden;
+	}
+}
 /* TEXTS & FONTS */
 .font {
 	font-family: var(--font)

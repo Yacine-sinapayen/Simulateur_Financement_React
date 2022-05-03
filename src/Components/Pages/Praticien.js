@@ -36,8 +36,8 @@ export default function Praticen() {
           <h1 className='text-center mrg-10'>Où pratiquez-vous ?</h1>
 
           <div className='flex wrap center-content'>
+            <button className='btn center-content mrg-10' onClick={goFifDpcAchat}>En France métropolitaine</button>
             <button className='btn center-content mrg-10' onClick={goFifDpcAchat}> Département Outre-Mer (DOM)</button>
-            <button className='btn center-content mrg-10' onClick={goFifDpcAchat}>En France métropolitaine ?</button>
             <button className='btn center-content mrg-10' onClick={goFifAchat}>Territoire Outre-Mer (TOM)</button>
           </div>
         </div>
