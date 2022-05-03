@@ -5,7 +5,7 @@ import flag from '../assets/flag.svg'
 export default function Fifpl() {
 
     const learnyLib = () => {
-        window.open('https://www.learnylib.com/', '_blank');
+        window.open('https://www.learnylib.com/formations/dentaire/', '_blank');
     }
 
     return (

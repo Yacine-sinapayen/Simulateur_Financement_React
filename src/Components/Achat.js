@@ -4,7 +4,7 @@ import arrow from '../assets/arrow.svg'
 export default function Achat() {
 
     const learnyLib = () => {
-        window.open('https://www.learnylib.com/', '_blank');
+        window.open('https://www.learnylib.com/formations/dentaire/', '_blank');
     }
 
     return (

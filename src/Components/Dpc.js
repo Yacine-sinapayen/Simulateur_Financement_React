@@ -5,7 +5,7 @@ import timer from '../assets/timer.svg'
 export default function Dpc() {
 
     const learnyLib = () => {
-        window.open('https://www.learnylib.com/', '_blank');
+        window.open('https://www.learnylib.com/formations/dentaire/', '_blank');
     }
 
     return (
