@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Logo2 from '../../assets/Logo2.svg';
-import useDimension from '../hook/useDimension';
 
 
 export default function LeftPart() {

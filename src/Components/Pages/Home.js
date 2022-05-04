@@ -32,7 +32,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
             >
             
-                <div className='center-content flex column'>
+                <div className='center-content flex column '>
 
                     <h1 className='text-center mrg-10'>Bienvenue sur votre simulateur de financement ! </h1>
 

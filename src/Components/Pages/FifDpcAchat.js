@@ -14,11 +14,11 @@ export default function FifDpcAchat() {
   const browserWidth = useDimension();
 
   return (
-    <div className={browserWidth < 700 ? 'flex column' : 'flex row'}>
+    <div className={browserWidth < 700 ? 'flex column ' : 'flex row'}>
       <LeftPart />
 
       <motion.div
-        className='right-part-responsive w100p h100vh flex column center-content'
+        className='safari right-part-responsive w100p h100vh flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
