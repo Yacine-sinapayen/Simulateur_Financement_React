@@ -18,7 +18,7 @@ export default function FifDpcAchat() {
       <LeftPart />
 
       <motion.div
-        className='safari right-part-responsive w100p h100vh flex column center-content'
+        className='safari responsive-part-right w100p h100vh flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
