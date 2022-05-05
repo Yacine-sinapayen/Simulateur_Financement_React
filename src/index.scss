@@ -9,13 +9,10 @@ body {
 }
 
 
-
-
 html {
 	font-family: var(--font);
 	margin: 0;
 	padding: 0;
-
 
 	--black: black;
 	--dark: #1C1C25;
@@ -57,15 +54,15 @@ p {
 }
 
 h1 {
-	font-size: 1.8em
+	font-size: 1.7em
 }
 
 h2 {
-	font-size: 1.6em
+	font-size: 1.5em
 }
 
 h3 {
-	font-size: 1.4em
+	font-size: 1.3em
 }
 
 h4 {
@@ -83,9 +80,10 @@ h5 {
 	background-color: var(--white);
 	border: solid 1.5px #292A36;
 	margin: 10px;
-	width: 350px;
-	max-width: 350px;
-	min-width: 350px;
+	width: 355px;
+	max-width: 355px;
+	min-width: 355px;
+	min-height: 265px;
 	overflow-x: hidden;
 }
 
@@ -143,8 +141,8 @@ button {
 }
 
 
-
-@media screen and (max-width:700px) {
+// Responsive sur pc
+@media screen and (max-width:821px) {
 
 	.header {
 		width: 100vw !important;
@@ -165,17 +163,30 @@ button {
 		min-width: 305px;
 		overflow-x: hidden;
 	}
-}
 
-@media screen and (max-width:400px) {
-	.img-logo-r {
-		height: 150px !important;
-		max-height: 150px !important;
-		min-height: 150px !important;
-		overflow-y: hidden;
+	// Je réduis la taille des titres en responsive car sinon on a des mauvais retours à la ligne
+	h1 {
+		font-size: 1.5em
+	}
+	
+	h2 {
+		font-size: 1.4em
+	}
+	
+	h3 {
+		font-size: 1.3em
+	}
+	
+	h4 {
+		font-size: 1.2em
+	}
+	
+	h5 {
+		font-size: 1.1em
 	}
 }
 
+// Je réduis la taille de mes cards pour les écrans plus petits
 @media screen and (max-width:320px) {
 
 	.block-cards-responsive {
@@ -186,14 +197,150 @@ button {
 	}
 }
 
-/* style appliqué uniquement sur Safari */
-@media not all and (min-resolution: 0.001dpcm) {
-	.safari {
-		color: red;
-		height: auto !important;
+// Pour les très petis écrans je réduis la tailles de mes cards et desbutton qui sont à l'interieurs
+@media screen and (max-width:300px) {
+
+	.block-cards-responsive {
+		width: 230px;
+		max-width: 230px;
+		min-width: 230px;
+		overflow-x: hidden;
+	}
+	button{
+		width: 200px;
+		min-width: 200px;
+		max-width: 200px;
+		overflow-x: hidden;
 	}
 }
 
+
+// Responsive du header avec le logo sur tous les mobiles
+@media screen and (max-width:400px) {
+	.img-logo-r {
+		height: 150px !important;
+		max-height: 150px !important;
+		min-height: 150px !important;
+		overflow-y: hidden;
+	}
+}
+
+//--------------------------------//
+//--------------------------------//
+
+//Gestion du reponsive par modèle de mobile pour répondre à la problématqiue de la taille de la fenêtre sur mobile. cf ce lien pour comprednre : https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
+
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 896px) 
+and (-webkit-device-pixel-ratio : 2) {
+	.iphoneXR {
+		margin-bottom: 230px;
+	}
+}
+// Iphone XR
+
+// Iphone 12 pro
+@media only screen and (device-width : 390px) and (device-height : 844px) and (-webkit-device-pixel-ratio : 3) {
+	.iphone-12-pro {
+		margin-bottom: 170px;
+	}
+}
+
+// pixel 5
+@media only screen 
+and (device-width : 393px) 
+and (device-height : 851px) 
+{
+	.pixel5 {
+		margin-bottom: 170px;
+	}
+}
+
+// Galxy S8
+@media only screen 
+and (device-width : 360px) 
+and (device-height : 740px) 
+{
+	.galaxyS8 {
+		margin-bottom: 100px;
+	}
+}
+
+// Galxy S20
+@media only screen 
+and (device-width : 412px) 
+and (device-height : 915px) 
+{
+	.galaxyS20 {
+		margin-bottom: 230px;
+	}
+}
+
+// ipadAir 
+@media only screen 
+and (device-width : 820px) 
+and (device-height : 1180px) 
+{
+	.ipadAir {
+		margin-bottom: 500px;
+	}
+}
+
+// ipadMini
+@media only screen 
+and (device-width : 768px) 
+and (device-height : 1024px) 
+{
+	.ipadMini {
+		margin-bottom: 340px;
+	}
+}
+
+// SurfacePro7
+@media only screen 
+and (device-width : 912px) 
+and (device-height : 1368px) 
+{
+	.surfacePro7 {
+		min-height: auto !important;
+		padding-bottom: 660px !important;
+	}
+	.surfacePro7-home{
+		min-height: 728px !important;
+	}
+
+	.surfacePro7-achat{
+		padding-bottom: 430px;
+	}
+
+	.surfacePro7-img{
+		margin-top:-120px
+	}
+}
+
+// surfaceDuo
+@media only screen 
+and (device-width : 540px) 
+and (device-height : 720px) 
+{
+	.surfaceDuo {
+		margin-bottom: 60px;
+	}
+}
+
+//galaxyA51
+@media only screen 
+and (device-width : 412px) 
+and (device-height : 914px) 
+{
+	.galaxyA5 {
+		margin-bottom: 250px;
+	}
+}
+
+//--------------------------------//
+//--------------------------------//
 
 /* TEXTS & FONTS */
 .font {
@@ -517,6 +664,14 @@ button {
 	overflow-x: hidden;
 }
 
+.maxw640 {
+	max-width: 640px;
+}
+
+.w630 {
+	width: 630px;
+}
+
 .w700 {
 	width: 700px;
 	max-width: 700px;
@@ -623,7 +778,7 @@ button {
 	height: 100%;
 }
 
-.h100vh {
+.minh100vh {
 	min-height: 100vh;
 }
 

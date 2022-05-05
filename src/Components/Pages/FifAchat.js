@@ -12,20 +12,23 @@ export default function FifAchat() {
   const browserWidth = useDimension();
 
   return (
-    <div className={ browserWidth < 700 ? 'flex column' : 'flex row' }>
+    <div className={browserWidth < 821 ? 'flex column respon iphoneXR iphone-12-pro pixel5 galaxyS8 galaxyS20 surfaceDuo galaxyA5' : 'flex row minh100vh surfacePro7'}>
       <LeftPart />
 
       <motion.div
-        className=' right-part-responsive h100vh center-content flex column'
+        className='w100p flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
+        <div className='center-content flex column ipadAir ipadMini'>
 
-        <h1 className='text-center mrg-10'>Mes possibilités de financements</h1>
+          <h1 className='text-center mrg-10'>Mes possibilités de financements</h1>
 
-        <div className='flex wrap center-content'>
-          <Fifpl />
-          <Achat />
+          <div className='flex wrap center-content'>
+            <Fifpl />
+            <Achat />
+          </div>
+          
         </div>
       </motion.div>
     </div>

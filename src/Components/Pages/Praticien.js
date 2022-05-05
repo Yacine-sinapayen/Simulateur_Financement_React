@@ -22,12 +22,12 @@ export default function Praticen() {
 
   return (
 
-    <div className={ browserWidth < 700 ? 'flex column' : 'flex row' }>
+    <div className={ browserWidth < 821  ? 'flex column' : 'flex row minh100vh surfacePro7-home' }>
       <LeftPart />
 
          {/* La balise "motion.div" est considérée comme une div */}
       <motion.div
-        className='right-part-responsive w100p h100vh flex column center-content'
+        className='responsive-part-right w100p flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
@@ -35,7 +35,7 @@ export default function Praticen() {
 
           <h1 className='text-center mrg-10'>Où pratiquez-vous ?</h1>
 
-          <div className='flex wrap center-content'>
+          <div className={ browserWidth < 821  ? 'flex column': 'flex wrap center-content'}>
             <button className='btn center-content mrg-10' onClick={goFifDpcAchat}>En France métropolitaine</button>
             <button className='btn center-content mrg-10' onClick={goFifDpcAchat}> Département Outre-Mer (DOM)</button>
             <button className='btn center-content mrg-10' onClick={goFifAchat}>Territoire Outre-Mer (TOM)</button>

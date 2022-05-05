@@ -22,12 +22,12 @@ export default function Home() {
     const browserWidth = useDimension();
     
     return (
-        <div className={ browserWidth < 700 ? 'flex column' : 'flex row'}>
+        <div className={ browserWidth < 821  ? 'flex column' : 'flex row surfacePro7-home minh100vh'}>
 
             <LeftPart />
 
             <motion.div
-                className='right-part-responsive w100p h100vh flex column center-content'
+                className='w100p flex column center-content'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
             >
@@ -38,7 +38,7 @@ export default function Home() {
 
                     <h1 className='text-center mrg-10'>Vous êtes ?</h1>
 
-                    <div className='flex wrap center-content'>
+                    <div className={ browserWidth < 821  ? 'flex column': 'flex wrap center-content'}>
                         <button className=' btn center-content mrg-10' onClick={goPraticien}>Praticien.ne libéral</button>
                         <button className=' btn center-content mrg-10' onClick={goSalarie}>Salarié.e </button>
                         <button className='btn center-content mrg-10 ' onClick={goEtudiant}>Étudiant.e</button>

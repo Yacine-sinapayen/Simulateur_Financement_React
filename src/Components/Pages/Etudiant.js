@@ -14,12 +14,12 @@ export default function Etudiant() {
   const browserWidth = useDimension();
 
   return (
-    <div className={browserWidth < 700 ? 'flex column' : 'flex row'}>
+    <div className={browserWidth < 821 ? 'flex column respon iphoneXR iphone-12-pro pixel5 galaxyS8 galaxyS20 surfaceDuo galaxyA5' : 'flex row minh100vh surfacePro7'}>
 
       <LeftPart />
 
       <motion.div
-        className='right-part-responsive w100p h100vh flex column center-content'
+        className='w100p  flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >

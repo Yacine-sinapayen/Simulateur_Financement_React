@@ -10,15 +10,15 @@ export default function OpcoDpc() {
   const browserWidth = useDimension();
 
   return (
-    <div className={ browserWidth < 700 ? 'flex column' : 'flex row'}>
+    <div className={browserWidth < 821 ? 'flex column respon iphoneXR iphone-12-pro pixel5 galaxyS8 galaxyS20 surfaceDuo galaxyA5' : 'flex row minh100vh surfacePro7'}>
       <LeftPart />
 
       {/* La balise "motion.div" est considérée comme une div */}
       <motion.div
-        className='right-part-responsive w100p h100vh flex column center-content'
+        className='w100p flex column center-content'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
-        <h1 className='text-center'>Mes possibilités de financements</h1>
+        <h1 className='text-center mrg-10'>Mes possibilités de financements</h1>
         <div className='flex wrap center'>
           <OpcoCard />
           <Dpc />
