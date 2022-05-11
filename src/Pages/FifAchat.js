@@ -1,7 +1,7 @@
 import React from 'react'
-import Fifpl from '../Fifpl'
-import Achat from '../Achat'
-import LeftPart from '../LeftPart/LeftPart'
+import Fifpl from '../Components/Fifpl'
+import Achat from '../Components/Achat'
+import LeftPart from '../Components/LeftPart';
 
 import { motion } from 'framer-motion';
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftPart from '../LeftPart/LeftPart';
+import LeftPart from '../Components/LeftPart';
 import { motion } from 'framer-motion'
 
 import useDimension from '../hook/useDimension';

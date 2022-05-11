@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftPart from '../LeftPart/LeftPart';
+import LeftPart from '../Components/LeftPart';
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion';
 

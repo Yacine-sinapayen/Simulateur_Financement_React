@@ -1,6 +1,6 @@
 import React from 'react';
-import OpcoCard from '../OpcoCard';
-import LeftPart from '../LeftPart/LeftPart';
+import OpcoCard from '../Components/OpcoCard';
+import LeftPart from '../Components/LeftPart';
 import { motion } from 'framer-motion';
 
 import useDimension from '../hook/useDimension';

@@ -1,7 +1,7 @@
 import React from 'react'
-import Dpc from '../Dpc';
-import OpcoCard from '../OpcoCard';
-import LeftPart from '../LeftPart/LeftPart'
+import Dpc from '../Components/Dpc';
+import OpcoCard from '../Components/OpcoCard';
+import LeftPart from '../Components/LeftPart';
 import { motion } from 'framer-motion';
 import useDimension from '../hook/useDimension';
 

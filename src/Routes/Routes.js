@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Home from './Pages/Home';
-import Praticien from './Pages/Praticien';
-import Salarie from './Pages/Salarie';
-import Etudiant from './Pages/Etudiant';
+import Home from '../Pages/Home';
+import Praticien from '../Pages/Praticien';
+import Salarie from '../Pages/Salarie';
+import Etudiant from '../Pages/Etudiant';
 
-import FifAchat from './Pages/FifAchat';
-import FifDpcAchat from './Pages/FifDpcAchat';
-import OpcoDpc from './Pages/OpcoDpc';
-import Opco from './Pages/Opco';
+import FifAchat from '../Pages/FifAchat';
+import FifDpcAchat from '../Pages/FifDpcAchat';
+import OpcoDpc from '../Pages/OpcoDpc';
+import Opco from '../Pages/Opco';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -20,7 +20,7 @@ export default function AnimateRoutes() {
             <Routes  location={location} key={location.pathname}>
                 <Route exact path="/" element={<Home />} />
 
-                <Route  path="/praticien" exact element={<Praticien />} />
+                <Route  path="/praticien" element={<Praticien />} />
                 <Route path="/salarie" element={<Salarie />} />
                 <Route path="/etudiant" element={<Etudiant />} />
 

@@ -1,13 +1,13 @@
 import React from 'react'
-import Fifpl from '../Fifpl'
-import Dpc from '../Dpc'
-import Achat from '../Achat'
+import Fifpl from '../Components/Fifpl'
+import Dpc from '../Components/Dpc'
+import Achat from '../Components/Achat'
 import { motion } from 'framer-motion'
 
 import useDimension from '../hook/useDimension';
 
 
-import LeftPart from '../LeftPart/LeftPart'
+import LeftPart from '../Components/LeftPart';
 
 export default function FifDpcAchat() {
 
