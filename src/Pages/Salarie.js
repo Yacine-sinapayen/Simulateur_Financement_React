@@ -34,13 +34,13 @@ export default function Salarie() {
 
         <div className="center-content flex column">
 
-          <h1 className='text-center mrg-10'> Vous êtes salarié.e</h1>
+          <h1 className='text-center mrg-10'> Vous êtes salarié.e dans un</h1>
 
           <div className="flex wrap maxw640 center-content">
             <button className='btn center-content  mrg-10 w300' onClick={goOpcoDpc}>Centre de soin conventionné</button>
             <button className='btn center-content  mrg-10 w300' onClick={goOpcoDpc}>Service de santé des armées</button>
             <button className='btn center-content  mrg-10 w300' onClick={goOpco}>Centre de soin NON conventionné</button>
-            <button className='btn center-content  mrg-10 w300' onClick={goOpco}>Praticien hospitalier</button>
+            <button className='btn center-content  mrg-10 w300' onClick={goOpco}>Service hospitalier</button>
           </div>
 
         </div>
