@@ -28,7 +28,7 @@ export default function Etudiant() {
 
           <h1 className='text-center mrg-10'>Vous êtes Étudiant.e</h1>
 
-          <div className='flex wrap center-content w75p '>
+          <div className='flex wrap center-content w75p'>
             <p className='text-center mrg-b10'>
               Etudiant.e : pas de prise en charge, vous pouvez bénéficier d’une remise étudiant au moment de votre inscription.
             </p>

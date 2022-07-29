@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import LeftPart from "../Components/LeftPart";
 import { motion } from "framer-motion";
-
 import useDimension from "../hook/useDimension";
 
 export default function Home() {
