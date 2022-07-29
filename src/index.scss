@@ -144,13 +144,13 @@ button {
 // Responsive sur pc
 @media screen and (max-width:821px) {
 
-	.header {
+	.header-responsive {
 		width: 100vw !important;
 		max-width: 100vw !important;
 		overflow-x: hidden;
 	}
 
-	.img-logo-r {
+	.img-logo-responsive {
 		height: 200px !important;
 		max-height: 200px !important;
 		min-height: 200px !important;
