@@ -8,7 +8,7 @@ export default function LeftPart() {
 
   return (
     <div className={
-    browserWidth < 821 ? "w100p surfacePro7-achat heade-responsive flex column dark-bg" : "w700 surfacePro7-achat heade-responsive  flex column dark-bg"
+    browserWidth < 821 ? "w100p surfacePro7-achat heade-responsive flex column left-part-bg" : "w700 surfacePro7-achat heade-responsive flex column left-part-bg"
     }>
       <a
         className="surfacePro7-img flex1 center-content"

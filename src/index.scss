@@ -8,6 +8,11 @@ body {
 	padding: 0;
 }
 
+.left-part-bg{
+	background-image: url("./assets/leftPartBg.svg");
+	background-size: cover;
+}
+
 
 html {
 	font-family: var(--font);
